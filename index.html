@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daivik's personal portfolio showcasing skills, experience, and projects." />
+  <meta name="keywords" content="Daivik, Portfolio, Web Developer, UI/UX Designer, Projects, Bengaluru" />
+  <meta name="author" content="Daivik" />
+  <title>Daivik's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/8d92d3c40f.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <img src="images/g.png" alt="Daivik Logo" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="menu-icon" onclick="closemenu()"><i class="fas fa-times"></i></li>
+        </ul>
+        <div class="menu-icon" onclick="openmenu()"><i class="fas fa-bars"></i></div>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Daivik</span><br />from Bengaluru</h1>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/abot.jpg" alt="Daivik Image" loading="lazy" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+         <p>
+  I’m a passionate UI/UX designer and web developer based in Bengaluru with a strong focus on creating user-friendly, accessible, and visually appealing digital experiences. With hands-on experience in both front-end and back-end technologies, I enjoy building clean interfaces and intuitive user journeys. I thrive in collaborative environments and constantly seek to learn and grow in this ever-evolving tech space.
+</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+              <li><span>App Development</span><br />Building Android/iOS apps</li>
+              <li><span>Web Development</span><br />Responsive websites</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>2020</span><br />Python Full Stack Project</li>
+              <li><span>2021</span><br />Android Project</li>
+              <li><span>2023</span><br />Internship at Karunadu Tech Pvt Ltd</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>2024</span><br />MCA from Presidency University</li>
+              <li><span>2021</span><br />B.Voc in Software & App Development</li>
+              <li><span>2020</span><br />Ethical Hacking Course</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Responsive and accessible websites tailored to client needs.</p>
+          <a href="#" onclick="alert('More details coming soon!')">Learn more</a>
+        </div>
+        <div>
+          <i class="fas fa-crop-alt"></i>
+          <h2>UI/UX Design</h2>
+          <p>User-centered design to enhance usability and aesthetics.</p>
+          <a href="#" onclick="alert('More details coming soon!')">Learn more</a>
+        </div>
+        <div>
+          <i class="fab fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Designing mobile app interfaces that are clean and engaging.</p>
+          <a href="#" onclick="alert('More details coming soon!')">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/r2.png" alt="Social Media App" />
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>App connects people around the globe. Coming soon!</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/r2.png" alt="Music App" />
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>Stream your favorite tracks. Coming soon!</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/r2.png" alt="Online Shopping App" />
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>Shop the latest trends online. Coming soon!</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn" onclick="alert('More projects coming soon!')">See More</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-envelope"></i> contact@daivikad9@gmail.com</p>
+          <p><i class="fas fa-phone"></i> 831058****</p>
+          <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+          <a href="Resources/Daivik_ADResume .pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Enter your email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg">NOTE: Wait 5 seconds before clicking submit again.</span>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Daivik. Made with <i class="fas fa-heart"></i> by 𓄀Bull</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs logic -->
+  <script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (const tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (const tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <!-- Menu toggle logic -->
+  <script>
+    const sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  <!-- Form submission logic -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5I9PEO04JtZAmPm4pM2ACLcXOwSW80VI7d9CIx75LfnlwKbhyzGOtf-xzbyjsiWXDvA/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully";
+          setTimeout(() => msg.innerHTML = "", 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+</body>
+</html>
