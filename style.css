@@ -33,9 +33,12 @@ nav {
     flex-wrap: wrap;
 }
 
+
 .logo {
-    width: 140px;
+    width: 180px;
     border-radius: 8px;
+    border: 1px solid #ff007f;
+    box-shadow: 0 0 6px #ff007f, 0 0 12px #ff007f;
 }
 
 nav ul li {
