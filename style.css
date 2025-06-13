@@ -385,7 +385,7 @@ form .btn2 {
 /* ------------ Responsive Design ------------ */
 @media only screen and (max-width: 768px) {
     #header {
-        background-image: url(images/main.jpg);
+        background-image: url(images/main.png);
     }
      .menu-icon {
     display: block;
